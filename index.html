@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+
+    <title>Lista to-do</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row" id="card-container">
+            <div class="col-sm-6">
+                <h1>Tarefas a fazer</h1>
+                <div class="col-auto pt-5" id="card">
+                    <div id="card" class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h2 class="card-title">Titulo da Tarefa</h2>
+                            <hr>
+                            <p class="card-text">Descrição</p>
+                        </div>
+                        <div class="offset-4 card-body">
+                            <a name="" id="btnE" class="btn btn-danger" href="#" role="button">Excluir</a>
+                            <a name="" id="btnP" class="btn btn-success" href="#" role="button">Pronto</a>
+                            <a style="display:none" id="btnD" class="btn btn-warning" href="#" role="button">Des</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="pronto" class="direita col-6 bg-success">
+                <h1>Tarefas Prontas</h1>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="fixed-bottom col-3">
+        <form id="novaTarefa" class="row col bg-dark" action="">
+            <label class="ml-2" style="color: #ffffff" for="">Titulo</label>
+            <input class="m-2 form-control" type="text" placeholder="Nome da Tarefa" id="input-titulo">
+
+            <label class="ml-2" style="color: #ffffff" for="">Descrição</label>
+            <input class="m-2 form-control" placeholder="Descrição da tarefa" name="" id="input-descricao" cols="1" rows="1"></input>
+            <button id="btnNovaTarefa" class="m-2 btn btn-secondary" type="submit">Adicionar Tarefa</button>
+
+        </form>
+    </footer>
+
+    <script id="placeholder-card" type="text/html">
+            <div class="col-auto pt-5" id="card">
+                <div id="card" class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h2 class="card-title">@titulo</h2>
+                        <hr>
+                        <p class="card-text">@descricao</p>
+                    </div>
+                    <div class="offset-4 card-body">
+                        <a name="" id="btnE" class="btn btn-danger" href="#" role="button">Excluir</a>
+                        <a name="" id="btnP" class="btn btn-success" href="#" role="button">Pronto</a>
+                    </div>
+                </div>
+            </div>
+        </script>
+
+    <!-- Bootstrap E jQuery -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+        <script src="main.js"></script>
+</body>
+
+
+</html>
